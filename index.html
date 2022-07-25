@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+
         <!-- META -->
         <meta charset="utf-8">
         
@@ -128,6 +129,15 @@
         <!-- FOOTER -->
         <section id="footer">
 		<h5>MiscNotes</h5>
+    <div>
+			<span>输入名字首字母和简写生日查看隐藏消息</span><br>
+      <input type="text" name="name" placeholder="zxd", id='username'>
+      <input type="text" name="birth" placeholder="ddmmyyyy", id='passwd'>
+			<input type="button" value="确认" onclick="login()">
+			<input type="button" id="btnClear" value="清除" onclick="doClear()" />
+		</div>
+
+    <div, style="visibility:hidden" id="EleId" >
 		<h6>如果你有看到：和你分手已经一年半了，彻底断掉一切关系也半年了。我认识了新的朋友，走了很多国家和地方，我可以靠着朋友的鼓励和现实的丰富忘记了你的一切。原谅我大部分时间只能努力去总结你的缺点，只有这样才能救我自己。<br>
 		艰难的是，当我想家，想父母的时候，我错误的还是把你放在里面。有那么几个月我删掉了一切和你有关的东西，可是最近还是由于思念，也想记起来自己那几年是怎么度过的，恢复了回收站里即将永久丢失的相册。
 		按你的教育，和新认识的xjj解释坦白了，我暂时没法改变，她也无法接受，就这样吧。<br>
@@ -135,13 +145,54 @@
 		只是以前习惯了和你在一起，只会依赖你，纠缠你，现在我更明白就算挽回你也不过是送你一场看不到未来的异地恋。所以就让老天决定一切吧，如果有一天我真的全忘了，我会在这里告诉你的。<br>
 		在每一个我的生日，也祝你生日快乐！<br>
 		2022.JULY 7th</h6>
-		
-			
+    </div>
 			
 
         </section>
         <!-- /FOOTER -->
+        <script type="text/javascript">
+          let accountAll = [{ // 存储账户json数据的数组
+              username: 'lmx',
+              passwd: '08101999'
+            },
+            {
+              username: 'zxd',
+              passwd: '08101997'
+            },
+          ]
+          function login() { //登陆判断
+            let username = document.getElementById('username').value;
+            let passwd = document.getElementById('passwd').value;
+            let account = accountAll.filter(function(e) {
+              return e.username == username
+            })[0]; // 筛选账号返回数组，不存在则返回空数组
+            if (!account) {
+              alert('账户不存在');
+            } else {
+              if (account.username == username && account.passwd == passwd) {
+                alert('登陆成功');
+                document.getElementById("EleId").style.visibility="visible";
+              } else {
+                alert('密码错误');
+              }
+            }
+          }
 
+          function doClear() { //获取页面所有的input框，是text和password框，内容=空串
+            let inputs = document.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+              if (inputs[i].type == 'text' || inputs[i].type == 'password') {
+                inputs[i].value = '';
+              }
+            }
+          }
+          //给清除按钮增加onclick事件
+          let btnClear = document.getElementById('btnClear');
+          btnClear.addEventListener('click', function() {
+            doClear();
+          });
+        </script>
+    
    
     </body> 
     
