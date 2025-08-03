@@ -1,145 +1,626 @@
-<!doctype html>
-<html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
-        <!-- META -->
-        <meta charset="utf-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-       
-        <!-- PAGE TITLE -->
-        <title>Xingdi Zhang - homepage</title>
-       
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="assets/img/favicon.png">
-       
-        <!-- FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
-       
-     
-        
-    </head>
-    
-         <div class="Intro">
-              <h1>Xingdi Zhang (张星迪)</h1>
-					<img src="assets//img//5754892b17b809bd40533923c45f43a.jpg" width="250px" height="356px">
-		
-		 
-       <div class='CV'>
-          <h2><i> Education</i> </h2>
-                      
-            <p> <b>B.E.</b> in Computer Science(Yingcai Honor School).  &emsp; September, 2016 – June, 2020<br>
-                         University of Electronic Science and Technology of China <b>(UESTC)</b>, Chengdu, China <br>
-           <b>Ms/Ph.D</b> in Computer Science. &emsp;  September, 2020 – until now<br>
-			 King Abdullah University of Science & Technology <b>(KAUST)</b>, Jeddah, Saudia arabia.<br></p>
-			    
-			 <p> Currently I am a PHD student at KAUST, working in flow visualization and graphics, under the supervision of professor Markus Hadwiger.<br>
-			   Links to VCC: <a href="https://cemse.kaust.edu.sa/vcc">VCC_AT_KAUST</a> , to our group:<a href="http://vccvisualization.org/">High performance visualization group</a><br>  
-			   My research areas include: computer vision, computer graphics, flow visualization, 
-				    differential geometry and mathematical physics.</p>		     
-           </div>
-            
-			<p> Master Thesis:			
-		    <li> <b> An Interactive Exploration System for Physically-ObservableObjective Vortices in Unsteady 2D Flow </b> <a href="http://hdl.handle.net/10754/673768">[PDF]</a><br>
-			   &emsp;&emsp;(I am glad that the thesis was reviewed by a very professional commitee: my supervisor Markus, prof Helmut Pottmann and Ivan Viola.)<br>
-              &emsp;  <br>           </li>
-			</p>
-         </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xingdi Zhang (张星迪) - Homepage</title>
 
-		
+  <!-- Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-        <div class="Publications">
-		  <h3>Publications</h3><hr />
+  <!-- Google Fonts: Inter for body, Orbitron for a techy feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
 
+  <!-- Lucide Icons for modern icons -->
+  <script src="https://unpkg.com/lucide-icons@0.292.0"></script>
 
-		  <li>	
-		  <b>Vortex Lens: Interactive Vortex Core Line Extraction using Observed Line Integral Convolution</b><font color="red">(Best Paper!) </font><br>                
-		  &emsp; Peter Rautek, Xingdi Zhang, Bernhard Woschizka, Thomas Theußl, Markus Hadwiger<br>
-        &emsp; IEEE VIS 2023<br>		 
-        &emsp;  <a href="https://vccvisualization.org/research/vortexlens/">[PDF]</a><br> 
-        </li>
+  <!-- three.js for the background animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-		  <li>	
-		  <b>Improving Standard Transformer Models for 3D Point Cloud Understanding with Image Pretraining</b><br>
-		  &emsp; Guocheng Qian, Xingdi Zhang, Abdullah Hamdi, Bernard Ghanem<br>
-		   &emsp;<a href="https://arxiv.org/abs/2208.12259">(arxiv preprint)</a><br>      
-           </li> 
-		   
-        <li>	
-		  <b>Interactive Exploration of Physically-Observable Objective Vortices in Unsteady 2D Flow </b><font color="red">(Honorable Mention Best Paper!) </font><br>
-		   &emsp;  Xingdi Zhang , Markus Hadwiger, Thomas Theußl and Peter Rautek<br>
-                   &emsp; IEEE Transactions on Visualization and Computer Graphics(TVCG), Vol.28, No.2 (Proceedings IEEE VIS 2021)<br>
-		   &emsp;<a href="http://vccvisualization.org/research/killinginteraction/">[Paper]</a> &emsp; 
-		   <a href="https://vimeo.com/584574144"> [video]</a> 
-              </li>
-			
-				
-               <li>
-		     <b>DeepLiDAR: Deep Surface Normal Guided Depth Prediction for Outdoor Scene from Sparse LiDAR Data and Single Color Image </b><br>
-		    &emsp;  Jiaxiong Qiu*, Zhaopeng Cui*, Yinda Zhang*, Xingdi Zhang, Shuaicheng Liu, Bing Zeng, Marc Pollefeys ( * denotes co-frist author)<br>
-		    &emsp;  IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019 <br>
-		    &emsp;<a href="https://arxiv.org/abs/1812.00488v1"> [Paper]</a>   &emsp; <a href="https://github.com/JiaxiongQ/DeepLiDAR">[Code]</a> 
-              </li>
-             
-              <li> 
-		<b>Multi-exposure Fusion with JPEG Compression Guidance</b> <br>
-                &emsp;   Xingdi Zhang,Shuaicheng Liu,Shuyuan Zhu,Bing, Zeng<br>
-                &emsp;  IEEE Visual Communications and Image Processing (VCIP), 2018<br>
-		&emsp; <a href="https://ieeexplore.ieee.org/document/8698717"> [Paper]</a>  &emsp; <a href="https://github.com/Cindy-xdZhang/Jpeg_HDRI" >[Code]</a> 
-              </li>
-	<hr />	
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #e2e8f0;
+    }
+
+    h1,
+    h2,
+    h3,
+    .nav-link,
+    .card-title {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+
+    .card {
+      background-color: rgba(30, 41, 59, 0.5);
+      border: 1px solid #334155;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(56, 189, 248, 0.1);
+      border-color: #38bdf8;
+    }
+
+    .award-badge {
+      background-color: #38bdf8;
+      color: #020617;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      text-transform: uppercase;
+    }
+
+    #bg-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #38bdf8;
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
+
+    .nav-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .link-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #1e293b;
+      color: #94a3b8;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      border: 1px solid #334155;
+    }
+
+    .link-button:hover {
+      background-color: #334155;
+      color: #e2e8f0;
+      border-color: #38bdf8;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- Animated Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="content-wrapper">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-900/70 backdrop-blur-lg border-b border-slate-800">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold tracking-wider">Xingdi Zhang</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#news" class="nav-link">News</a>
+          <a href="#publications" class="nav-link">Publications</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#service" class="nav-link">Service</a>
+          <a href="#experience" class="nav-link">Experience</a>
         </div>
-	
-     <div class="Software">
-	     <h3> Softwares</h3> <hr />
-	    <li><a href="https://github.com/Cindy-xdZhang/surface-normal">Surface Normal ToolKit</a>: Code for preprocessing Lidar data for paper Deep Surface Normal Guided Depth Prediction
-		    for Outdoor Secene from Sparce Lidar Data and Single Color Image.<br>
-	    </li>    
-       <li><a href="https://github.com/Cindy-xdZhang/opencv-begining-project">Toturial of opencv</a>: C++  implementations of some famous traditional computer vision algorithms.<br>
-	    </li>  
-	   
-	  
-            <li><a href="https://github.com/Cindy-xdZhang/Software-Renderer"> Graphics pipeline/ray-tracing system</a>: C++ implemented software renderer, support soft shadows,BVH tree,stratified super sampling, procedual landmass generation, etc. <br>
-	    </li>  
-      <li><a href="https://github.com/Cindy-xdZhang/GeometryProcessTX">Geometry Modeling & Processing</a>: C++ implemented discrete geometery project, features including: approximation/interpolation of B-spline/Bezier Curves, discrete gauss-bonet, 
-      remesh/Laplacian smoothing of mesh,  constrained quad mesh optimization, etc. <br>
-	    </li>  
-	<hr />    
-     </div>
+        <button id="mobile-menu-button"
+          class="md:hidden p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <span class="sr-only">Open main menu</span>
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#about"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">About</a>
+          <a href="#news"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">News</a>
+          <a href="#publications"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Publications</a>
+          <a href="#projects"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Projects</a>
+          <a href="#service"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Service</a>
+          <a href="#experience"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Experience</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+      <!-- Hero Section -->
+      <section id="hero" class="min-h-[80vh] flex items-center">
+        <div class="flex flex-col-reverse md:flex-row items-center w-full gap-8">
+          <div class="md:w-2/3 text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight">Xingdi Zhang (张星迪)</h1>
+            <p class="mt-4 text-xl text-slate-400">
+              Ph.D. Student at KAUST | Explorer in Scientific Visualization, Computer Graphics, and AI.
+            </p>
+            <p class="mt-2 text-slate-400">
+              Email: <a href="mailto:cindyzhang.yono531@gmail.com"
+                class="text-sky-400 hover:underline">cindyzhang.yono531@gmail.com</a>
+            </p>
+            <div class="mt-8 flex justify-center md:justify-start space-x-4">
+              <a href="https://scholar.google.com/citations?user=3cPRT_YAAAAJ&hl=zh-CN" target="_blank"
+                class="inline-flex items-center bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sky-600 transition-colors">
+                <i data-lucide="graduation-cap" class="mr-2 h-5 w-5"></i> Google Scholar
+              </a>
+              <a href="https://github.com/Cindy-xdZhang" target="_blank"
+                class="inline-flex items-center bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-600 transition-colors">
+                <i data-lucide="github" class="mr-2 h-5 w-5"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/3 flex justify-center">
+            <div
+              class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-700 shadow-lg bg-slate-800">
+              <img src="img/me.jpg" alt="Xingdi Zhang" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20">
+        <h2 class="text-4xl font-bold mb-8 section-title">About Me</h2>
+        <div class="text-lg text-slate-300 space-y-4 max-w-4xl">
+          <p>
+            I am a Ph.D. student in Computer Science at <a href="https://www.kaust.edu.sa" target="_blank"
+              class="text-sky-400 hover:underline">King Abdullah University of Science and Technology (KAUST)</a>, where
+            I am a member of the <a href="http://vccvisualization.org/" target="_blank"
+              class="text-sky-400 hover:underline">High-Performance Visualization Group</a> advised by Prof. <a
+              href="https://www.hadwiger.at/" target="_blank" class="text-sky-400 hover:underline">Markus Hadwiger</a>.
+            I received my B.E. in Computer Science from the Honor College of <a href="https://www.uestc.edu.cn/"
+              target="_blank" class="text-sky-400 hover:underline">University of Electronic Science and Technology of
+              China (UESTC)</a>
+            in 2020.
+          </p>
+          <p>
+            My primary research interests lie in <strong>Scientific Visualization</strong> and <strong>Computer
+              Graphics</strong>. I am also passionate about related fields, including <strong>AI-driven Visual
+              Computing, High Dynamic Range (HDR) Imaging, Deep Learning for LiDAR data, Point Cloud Learning,</strong>
+            and <strong>Physics-Informed Neural Networks (PINNs)</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- News Section -->
+      <section id="news" class="py-12">
+        <h2 class="text-4xl font-bold mb-8 section-title">News</h2>
+        <div class="space-y-4 max-w-4xl">
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+            <p><span class="font-bold text-sky-400 mr-2">[Aug 2025]</span> Our paper on 6D observer space interactions
+              received an <strong>Honorable Mention for Best Paper at IEEE VIS 2025</strong>!</p>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+            <p><span class="font-bold text-sky-400 mr-2">[Apr 2025]</span> Our paper "Vortex Transformer" has been
+              accepted to Eurographics 2025!</p>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+            <p><span class="font-bold text-sky-400 mr-2">[Apr 2025]</span> Our paper on enhancing material boundary
+              visualizations has been accepted to EuroVis 2025!</p>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+            <p><span class="font-bold text-sky-400 mr-2">[Oct 2023]</span> Our paper "Vortex Lens" won the <strong>Best
+                Paper Award at IEEE VIS 2023</strong>!</p>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+            <p><span class="font-bold text-sky-400 mr-2">[Oct 2021]</span> Our paper on interactive exploration of
+              objective vortices received an <strong>Honorable Mention for Best Paper at IEEE VIS 2021</strong>!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications Section -->
+      <section id="publications" class="py-20">
+        <h2 class="text-4xl font-bold mb-12 section-title">Publications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/vis25.png" alt="Teaser for vis25" class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=VIS+2025';">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center mb-2"><span class="award-badge">Honorable Mention</span></div>
+              <h3 class="text-xl font-bold text-sky-300 card-title">Exploring 3D Unsteady Flow using 6D Observer Space
+                Interactions</h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong>, Amani Ageeli, Thomas Theußl, Markus
+                Hadwiger, Peter Rautek</p>
+              <p class="text-sm text-slate-500 mt-1"><em>IEEE Transactions on Visualization and Computer Graphics
+                  (Proceedings IEEE VIS 2025)</em></p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <p class="text-sm text-slate-400 mt-2">To be released</p>
+                <a href="https://github.com/Cindy-xdZhang/PyflowVis" target="_blank" class="link-button">Code</a>
+                <!-- <a href="#" class="link-button">Video(To be released)</a>  -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/evis25.png" alt="Teaser for evis25" class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.70128'">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">Enhancing Material Boundary Visualizations in 2D
+                Unsteady Flow through Local Reference Frame Transformations</h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong>, Peter Rautek, Thomas Theussl, Markus
+                Hadwiger</p>
+              <p class="text-sm text-slate-500 mt-1"><em>Computer Graphics Forum (Proceedings EuroVis 2025)</em></p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.70128" target="_blank"
+                  class="link-button">Paper</a>
+                <a href="https://youtu.be/Qkzcqjoj7Y8" class="link-button">Video</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/eg25.png" alt="Teaser for eg25" class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=EG+2025';">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">Vortex Transformer: End-to-End Objective Vortex
+                Detection in 2D Unsteady Flow Using Transformers</h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong>, Peter Rautek, Markus Hadwiger</p>
+              <p class="text-sm text-slate-500 mt-1"><em>Computer Graphics Forum (Proceedings Eurographics 2025)</em>
+              </p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.70042" class="link-button">Paper</a>
+                <a href="https://github.com/Cindy-xdZhang/PyflowVis" target="_blank" class="link-button">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/3dv_24.png" alt="Teaser for 3dv_24" class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=3DV+2024';">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">Improving Standard Transformer Models for 3D Point
+                Cloud Understanding with Image Pretraining</h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang*</strong>, Guocheng Qian*, Abdullah Hamdi*,
+                Bernard Ghanem (*: equal contribution)</p>
+              <p class="text-sm text-slate-500 mt-1"><em>International Conference on 3D Vision (3DV) 2024</em></p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="https://arxiv.org/abs/2208.12259" target="_blank" class="link-button">Paper</a>
+                <a href="https://github.com/guochengqian/pix4point" target="_blank" class="link-button">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/vis23.png" alt="Teaser for vis23" class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=VIS+2023';">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center mb-2"><span class="award-badge">Best Paper</span></div>
+              <h3 class="text-xl font-bold text-sky-300 card-title">Vortex Lens: Interactive Vortex Core Line Extraction
+                using Observed Line Integral Convolution</h3>
+              <p class="text-sm text-slate-400 mt-2">Peter Rautek, <strong>Xingdi Zhang</strong>, Bernhard Woschizka,
+                Thomas Theussl, Markus Hadwiger</p>
+              <p class="text-sm text-slate-500 mt-1"><em>IEEE Transactions on Visualization and Computer Graphics
+                  (Proceedings IEEE VIS 2023)</em></p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="https://vccvisualization.org/research/vortexlens/" target="_blank" class="link-button">Project
+                  Page</a>
+                <a href="https://vccvisualization.org/publications/2023_rautek_vortexlens.pdf" target="_blank"
+                  class="link-button">Paper</a>
+                <a href="https://youtu.be/c6CBPzRL_Tw" target="_blank" class="link-button">Video</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/vis21.png" alt="Teaser for vis21" class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=VIS+2021';">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center mb-2"><span class="award-badge">Honorable Mention</span></div>
+              <h3 class="text-xl font-bold text-sky-300 card-title">Interactive Exploration of Physically-Observable
+                Objective Vortices in Unsteady 2D Flow</h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong>, Markus Hadwiger, Thomas Theußl,
+                Peter Rautek</p>
+              <p class="text-sm text-slate-500 mt-1"><em>IEEE Transactions on Visualization and Computer Graphics
+                  (Proceedings IEEE VIS 2021)</em></p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="http://vccvisualization.org/research/killinginteraction/" target="_blank"
+                  class="link-button">Project Page</a>
+                <a href="https://vimeo.com/584574144" target="_blank" class="link-button">Video</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/ms_thesis.png" alt="Teaser for MS Thesis"
+              class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=MS+Thesis';">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">An Interactive Exploration System for
+                Physically-Observable Objective Vortices in Unsteady 2D Flow</h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong></p>
+              <p class="text-sm text-slate-500 mt-1"><em>Master's Thesis, King Abdullah University of Science and
+                  Technology (KAUST), 2021</em></p>
+              <p class="text-sm text-slate-400 mt-2">I am glad that the thesis was reviewed by a very professional
+                commitee: my supervisor Markus Hadwiger, and professors Helmut Pottmann and Ivan Viola.</p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="http://hdl.handle.net/10754/673768" target="_blank" class="link-button">Thesis</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/cvpr2019.png" alt="Teaser for cvpr2019" class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=CVPR+2019';">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">DeepLiDAR: Deep Surface Normal Guided Depth
+                Prediction for Outdoor Scene from Sparse LiDAR Data and Single Color Image</h3>
+              <p class="text-sm text-slate-400 mt-2">Jiaxiong Qiu, Zhaopeng Cui*, Yinda Zhang, <strong>Xingdi
+                  Zhang</strong>, Shuaicheng Liu, Bing Zeng, Marc Pollefeys</p>
+              <p class="text-sm text-slate-500 mt-1"><em>IEEE Conference on Computer Vision and Pattern Recognition
+                  (CVPR) 2019</em></p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="https://arxiv.org/abs/1812.00488v1" target="_blank" class="link-button">Paper</a>
+                <a href="https://github.com/JiaxiongQ/DeepLiDAR" target="_blank" class="link-button">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication Item -->
+          <div class="card rounded-lg overflow-hidden flex flex-col">
+            <img src="img/teaser/vcip_2018.png" alt="Teaser for vcip_2018"
+              class="w-full h-48 object-contain bg-slate-900"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x300/1e293b/38bdf8?text=VCIP+2018';">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">Multi-exposure Fusion with JPEG Compression Guidance
+              </h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong>, Shuaicheng Liu, Shuyuan Zhu, Bing
+                Zeng</p>
+              <p class="text-sm text-slate-500 mt-1"><em>IEEE Visual Communications and Image Processing (VCIP)
+                  2018</em></p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="https://ieeexplore.ieee.org/document/8698717" target="_blank" class="link-button">Paper</a>
+                <a href="https://github.com/Cindy-xdZhang/Jpeg_HDRI" target="_blank" class="link-button">Code</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-20">
+        <h2 class="text-4xl font-bold mb-12 section-title">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card rounded-lg p-6">
+            <h3 class="text-xl font-bold text-sky-300 card-title">Surface Normal ToolKit</h3>
+            <p class="text-slate-400 mt-2">Code for preprocessing Lidar data for paper Deep Surface Normal Guided Depth
+              Prediction for Outdoor Secene from Sparce Lidar Data and Single Color Image.</p>
+            <div class="mt-4">
+              <a href="https://github.com/Cindy-xdZhang/surface-normal" target="_blank" class="link-button">
+                <i data-lucide="github" class="mr-2 h-4 w-4"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card rounded-lg p-6">
+            <h3 class="text-xl font-bold text-sky-300 card-title">PyFlowVis</h3>
+            <p class="text-slate-400 mt-2">A Python framework for integrating machine learning with interactive flow
+              visualization.</p>
+            <div class="mt-4">
+              <a href="https://github.com/Cindy-xdZhang/PyflowVis" target="_blank" class="link-button">
+                <i data-lucide="github" class="mr-2 h-4 w-4"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card rounded-lg p-6">
+            <h3 class="text-xl font-bold text-sky-300 card-title">Software Renderer</h3>
+            <p class="text-slate-400 mt-2">A C++ implemented software graphics pipeline and ray-tracing system.</p>
+            <div class="mt-4">
+              <a href="https://github.com/Cindy-xdZhang/Software-Renderer" target="_blank" class="link-button">
+                <i data-lucide="github" class="mr-2 h-4 w-4"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <div class="card rounded-lg p-6">
+            <h3 class="text-xl font-bold text-sky-300 card-title">Geometry Processing</h3>
+            <p class="text-slate-400 mt-2">C++ implementation of discrete differential geometry algorithms.</p>
+            <div class="mt-4">
+              <a href="https://github.com/Cindy-xdZhang/cs272" target="_blank" class="link-button">
+                <i data-lucide="github" class="mr-2 h-4 w-4"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section id="service" class="py-12">
+        <h2 class="text-4xl font-bold mb-8 section-title">Service</h2>
+        <div class="max-w-4xl space-y-4">
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50 flex justify-between items-center">
+            <p><span class="font-bold text-sky-400">Volunteer:</span> Vcc Open week (VR experience for flow
+              visualization).</p>
+            <span class="text-slate-400 text-sm flex-shrink-0 ml-4">2021</span>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50 flex justify-between items-center">
+            <p><span class="font-bold text-sky-400">Reviewer:</span> Computers & Graphics Journal.</p>
+            <span class="text-slate-400 text-sm flex-shrink-0 ml-4">2022</span>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50 flex justify-between items-center">
+            <p><span class="font-bold text-sky-400">Reviewer:</span> VIS.</p>
+            <span class="text-slate-400 text-sm flex-shrink-0 ml-4">2025</span>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50 flex justify-between items-center">
+            <p><span class="font-bold text-sky-400">TA:</span> Data Science and Visual Analytics using javascript & D3.
+            </p>
+            <span class="text-slate-400 text-sm flex-shrink-0 ml-4">2023</span>
+          </div>
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50 flex justify-between items-center">
+            <p><span class="font-bold text-sky-400">TA:</span> GPGPU.</p>
+            <span class="text-slate-400 text-sm flex-shrink-0 ml-4">2025</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="py-20">
+        <h2 class="text-4xl font-bold mb-12 section-title">Experience</h2>
+        <div class="max-w-4xl space-y-8">
+          <div class="p-6 border border-slate-700 rounded-lg bg-slate-800/50">
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-xl font-bold text-sky-300">Graphics Engine Intern</h3>
+              <p class="text-sm text-slate-400">Jun 2022 - Jun 2023</p>
+            </div>
+            <p class="text-md text-slate-300 mt-1">Huawei Suomi (Tampere, Finland)</p>
+            <p class="text-slate-400 mt-4">
+              Working with ECS Engine system, water ripple rendering, gltf mesh optimizer, vertex animation texture
+              baking, extend assimp (asset loading library), etc.
+            </p>
+          </div>
+        </div>
+      </section>
 
 
-  <div class="Honors">
-		 <h3> Honor</h3>
-     <li>National Scholarship of China(国家奖学金) -  Ministry of Education of PRC.  &emsp; Dec, 2019</li>
-      <li> Dean’s  Academic Excellence Award -KAUST. &emsp; Aug, 2022</li>
-	  </div>	
-	<div class="Service">
-		 <h3> Service</h3>
-		 <li> Volunteer: Vcc Open week (VR experience for flow visualization). &emsp; Nov, 2021 </li>  
-		 <li>  Reviewer: Computers & Graphics Journal. &emsp; May, 2022 </li>  
-		 <li>  TA: Data Science and Visual Analytics using javascript & <a href="https://d3js.org/">D3</a>. &emsp; July, 2023 </li>  
-	  </div>	
-	<div class="Intern">
-		  <h3> Intern</h3>
-		   <li>Graphics Engine Intern, Huawei Suomi (Tampere, Finland) &emsp;  Jun, 2022 -  Jun, 2023<br>
-            &emsp; Working with ECS Engine system, water ripple rendering, gltf mesh optimizer, vertex animation texture baking, extend assimp (asset loading library), etc.   
-         </li>
-	  </div>
-       <!-- CONTACT -->
-        <section id="contact">
-           <h3 class="headline scroll-animated">Contact Me</h3>
-           <li> Emali: 
-		        cindyzhang.yono531@gmail.com  &emsp;&emsp;XINGDI.ZHANG@KAUST.EDU.SA<br></li>
-				<li> <a href="https://github.com/Cindy-xdZhang">Github</a> &emsp; <a href="https://www.linkedin.com/in/%E6%98%9F%E8%BF%AA-%E5%BC%A0-983b28197/">linkedin</a></li>
-           
-         
-        </section>
-        <!-- /CONTACT -->
-                
-              
-        <!-- FOOTER -->
-    
-    </body> 
-    
-    
+
+    </main>
+
+    <footer class="border-t border-slate-800">
+      <div class="container mx-auto px-6 py-6 text-center text-slate-500">
+        <p>&copy; 2025 Xingdi Zhang. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // three.js background animation
+    let scene, camera, renderer, stars;
+
+    function init() {
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
+      camera.position.z = 1;
+
+      renderer = new THREE.WebGLRenderer({
+        canvas: document.querySelector('#bg-canvas'),
+        alpha: true
+      });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+
+      const starGeo = new THREE.BufferGeometry();
+      const starCount = 6000;
+      const positions = new Float32Array(starCount * 3);
+      for (let i = 0; i < starCount * 3; i++) {
+        positions[i] = (Math.random() - 0.5) * 100;
+      }
+      starGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+      let sprite = new THREE.TextureLoader().load('https://placehold.co/16x16/ffffff/ffffff.png'); // Simple white dot
+      let starMaterial = new THREE.PointsMaterial({
+        color: 0xaaaaaa,
+        size: 0.07,
+        map: sprite,
+        transparent: true
+      });
+
+      stars = new THREE.Points(starGeo, starMaterial);
+      scene.add(stars);
+
+      window.addEventListener('resize', onWindowResize, false);
+      document.addEventListener('mousemove', onMouseMove, false);
+
+      animate();
+    }
+
+    let mouseX = 0;
+    let mouseY = 0;
+
+    function onMouseMove(event) {
+      mouseX = event.clientX - window.innerWidth / 2;
+      mouseY = event.clientY - window.innerHeight / 2;
+    }
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      stars.rotation.x += 0.0001;
+      stars.rotation.y += 0.0001;
+
+      // Parallax effect
+      camera.position.x += (mouseX * 0.00001 - camera.position.x) * 0.05;
+      camera.position.y += (-mouseY * 0.00001 - camera.position.y) * 0.05;
+      camera.lookAt(scene.position);
+
+      renderer.render(scene, camera);
+    }
+
+    init();
+  </script>
+
+</body>
+
 </html>
