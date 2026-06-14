@@ -197,6 +197,7 @@
         <div class="hidden md:flex space-x-8">
           <a href="#news" class="nav-link">News</a>
           <a href="#publications" class="nav-link">Publications</a>
+          <a href="#dataset" class="nav-link">Dataset</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#service" class="nav-link">Service</a>
           <a href="#experience" class="nav-link">Experience</a>
@@ -214,6 +215,8 @@
             class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">News</a>
           <a href="#publications"
             class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Publications</a>
+          <a href="#dataset"
+            class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Dataset</a>
           <a href="#projects"
             class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Projects</a>
           <a href="#service"
@@ -300,6 +303,13 @@
         <div class="space-y-4 max-w-4xl">
 
           <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
+            <p><span class="font-bold text-sky-400 mr-2">[June 2026]</span>My PhD thesis received the <a
+                href="https://www.eg.org/wp/eurographics-awards-programme/eurovis-phd-award/" target="_blank"
+                class="text-sky-400 hover:underline">EuroVis Best PhD Award</a>, an academic accolade recognizing
+              outstanding dissertations in visualization.</p>
+          </div>
+
+          <div class="p-4 border border-slate-700 rounded-lg bg-slate-800/50">
             <p><span class="font-bold text-sky-400 mr-2">[April 2026]</span>Our paper "Generic Variational Spacetime
               Optimization of Vortex
               Core Manifolds" is accepted to ACM SIGGRAPH 2026!</strong>!</p>
@@ -339,6 +349,26 @@
         <h2 class="text-4xl font-bold mb-12 section-title">Publications</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
+          <!-- PhD Thesis Item -->
+          <div class="card rounded-lg flex flex-col md:col-span-2">
+            <span class="award-badge">EuroVis Best PhD Award</span>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">Observer-Relative Flow Visualization and Objective
+                Feature Extraction</h3>
+              <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong></p>
+              <p class="text-sm text-slate-500 mt-1"><em>PhD Thesis, King Abdullah University of Science and Technology
+                  (KAUST), 2025</em></p>
+              <p class="text-sm text-slate-400 mt-2">Recipient of the EuroVis Best PhD Award for outstanding doctoral
+                research in visualization.</p>
+              <div class="mt-4 space-x-2 flex-wrap gap-y-2">
+                <a href="https://www.dropbox.com/scl/fo/o8chd6p79vg2cwci3xtvs/APJ8AiiqjV3dPBo9HjF1L1I?rlkey=38okzkxdc7hg09xjsmue627u8&st=nk2gi12o&dl=0"
+                  target="_blank" class="link-button">Thesis</a>
+                <a href="https://www.eg.org/wp/eurographics-awards-programme/eurovis-phd-award/" target="_blank"
+                  class="link-button">Award</a>
+              </div>
+            </div>
+          </div>
+
           <!-- Publication Item -->
           <div class="card rounded-lg flex flex-col">
             <span class="siggraph-badge ">SIGGRAPH</span>
@@ -352,9 +382,12 @@
               <p class="text-sm text-slate-400 mt-2"><strong>Xingdi Zhang</strong>, Peter Rautek,Markus Hadwiger</p>
               <p class="text-sm text-slate-500 mt-1"><em>Proceedings of ACM SIGGRAPH 2026</em></p>
               <div class="mt-4 space-x-2 flex-wrap gap-y-2">
-                <p class="text-sm text-slate-400 mt-2">Coming soon</p>
-                <a href="https://github.com/Cindy-xdZhang/PyflowVis" target="_blank" class="link-button">Code</a>
-                <!-- <a href="#" class="link-button">Video(To be released)</a>  -->
+                <a href="https://vccvisualization.org/research/genericvortexcoremanifolds/" target="_blank"
+                  class="link-button">Paper</a>
+                <a href="https://github.com/Cindy-xdZhang/GenericVariationalVortexCore" target="_blank"
+                  class="link-button">Code</a>
+                <a href="https://www.youtube.com/watch?v=QsAiYPGV2-M&source_ve_path=OTY3MTQ&embeds_referring_euri=https%3A%2F%2Fvccvisualization.org%2F"
+                  target="_blank" class="link-button">Video</a>
               </div>
             </div>
           </div>
@@ -537,6 +570,48 @@
             </div>
           </div>
 
+        </div>
+      </section>
+
+      <!-- Dataset Section -->
+      <section id="dataset" class="py-20">
+        <h2 class="text-4xl font-bold mb-12 section-title">Dataset</h2>
+        <div class="grid grid-cols-1 gap-8 max-w-4xl">
+          <div class="card rounded-lg flex flex-col">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">XFLUIDX3D</h3>
+              <p class="text-sm text-slate-400 mt-3">
+                This dataset contains the flow data used in the following papers:
+              </p>
+              <ul class="list-disc pl-6 text-sm text-slate-400 mt-2 space-y-1">
+                <li><em>Generic Variational Spacetime Optimization of Vortex Core Manifolds</em></li>
+                <li><em>Exploring 3D Unsteady Flow using 6D Observer Space Interactions</em></li>
+              </ul>
+              <p class="text-slate-400 mt-4">
+                This open-source dataset contains three-dimensional unsteady flow simulation data generated using the
+                Lattice Boltzmann Method (LBM). The collection is designed to support research in flow visualization,
+                vortex analysis, and interactive exploration of complex fluid dynamics.
+              </p>
+              <p class="text-slate-400 mt-4">
+                The dataset includes three canonical aerodynamic configurations. Because of the 50GB limit of Zenodo, we
+                split the dataset into different volumes. You should go to the correct volume to find the flow data you
+                want:
+              </p>
+              <ul class="list-disc pl-6 text-slate-400 mt-2 space-y-1">
+                <li>BOEING_747 (Volume 1)</li>
+                <li>DELTAWing (Volume 1)</li>
+                <li>F22RAPTOR (Re = 400,000) (Volume 2)</li>
+              </ul>
+              <p class="text-slate-400 mt-4">
+                All simulations were performed with consistent numerical settings to enable comparative studies of
+                vortex dynamics, flow separation, and unsteady wake structures.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <a href="https://zenodo.org/records/19419413" target="_blank" class="link-button">Volume 1</a>
+                <a href="https://zenodo.org/records/19427191" target="_blank" class="link-button">Volume 2</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
