@@ -693,6 +693,31 @@
               </div>
             </div>
           </div>
+          <div class="card rounded-lg flex flex-col">
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-xl font-bold text-sky-300 card-title">VortexTransformer-Fitted Vatistas Velocity Profile
+              </h3>
+              <p class="text-sm text-slate-400 mt-3">
+                This dataset contains the training and validation data used in <em>VortexTransformer: End-to-End
+                  Objective Vortex Detection in 2D Unsteady Flow Using Transformers</em>.
+              </p>
+              <p class="text-slate-400 mt-4">
+                Flow-field patches from several benchmark 2D flow datasets were fitted with parametrized Vatistas vortex
+                models using simulated annealing and gradient-based optimization. The fitted parameters provide
+                analytically defined vortex-core labels for learning-based vortex segmentation, including the
+                noise-based augmentations described in the paper.
+              </p>
+              <p class="text-slate-400 mt-4">
+                Source flows include cylinder2d, Heated Cylinder with Boussinesq, Rotation Four Center,
+                beads_WeinkaufTheisel2010, pipecylinder2d, and doublegyre2d.
+              </p>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <a href="https://zenodo.org/records/21277295" target="_blank" class="link-button">Dataset</a>
+                <a href="https://github.com/Cindy-xdZhang/PyflowVis/blob/main/train.py" target="_blank"
+                  class="link-button">Example Code</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
