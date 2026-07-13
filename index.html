@@ -244,6 +244,7 @@
       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#" class="text-2xl font-bold tracking-wider">Xingdi Zhang</a>
         <div class="hidden md:flex space-x-8">
+          <a href="#research" class="nav-link">Research</a>
           <a href="#education" class="nav-link">Education</a>
           <a href="#news" class="nav-link">News</a>
           <a href="#publications" class="nav-link">Publications</a>
@@ -261,6 +262,8 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="md:hidden hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#research"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-black hover:bg-sky-50">Research</a>
           <a href="#education"
             class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-black hover:bg-sky-50">Education</a>
           <a href="#news"
@@ -309,8 +312,15 @@
 
                 </p>
                 <p>
-                  My primary interests: <strong>Flow
-                    Visualization, Differential Geometry, Variational Calculus and
+                  My work sits at the intersection of <strong>mathematics</strong> and <strong>high-performance
+                    computing</strong>: I build the theory of my methods on
+                  <strong>differential geometry, Riemannian manifolds, and the calculus of variations</strong>, and I
+                  turn those continuous formulations into <strong>massively parallel CUDA solvers</strong> and
+                  <strong>real-time C++/OpenGL renderers</strong> for interactive scientific visualization.
+                </p>
+                <p>
+                  My primary interests: <strong>Flow Visualization, Differential Geometry &amp; Riemannian Geometry,
+                    Variational Calculus, GPU/CUDA High-Performance Computing, Real-Time C++/OpenGL Rendering, and
                     AI-driven Visual Computing</strong>.
                 </p>
               </div>
@@ -347,6 +357,71 @@
         </div>
       </section>
 
+
+      <!-- Research Section -->
+      <section id="research" class="py-8">
+        <h2 class="text-4xl font-bold mb-6 section-title">Research</h2>
+        <p class="text-lg text-gray-800 max-w-4xl mb-8">
+          My research bridges the <strong>continuous language of mathematics</strong> and the
+          <strong>massively parallel world of the GPU</strong>. I formulate flow features and observer transformations
+          on smooth <em>manifolds</em> using <em>differential geometry</em> and the <em>calculus of variations</em>,
+          then realize these formulations as high-performance <em>CUDA</em> solvers and real-time
+          <em>C++/OpenGL</em> renderers — closing the loop from theory to interactive visualization.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <!-- Pillar 1: Mathematical Foundations -->
+          <div class="card rounded-lg p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-sky-100 text-sky-600">
+                <i data-lucide="sigma" class="h-6 w-6"></i>
+              </span>
+              <h3 class="text-xl font-bold text-sky-300 card-title">Mathematical Foundations</h3>
+            </div>
+            <p class="text-slate-400">
+              I ground my methods in geometry and analysis, treating reference frames and flow structures as
+              objects on smooth manifolds rather than as fixed grids.
+            </p>
+            <ul class="list-disc pl-6 text-slate-400 mt-3 space-y-1">
+              <li><strong>Differential Geometry</strong> — vector fields, tensor calculus, Killing fields, and
+                curvature on curved domains.</li>
+              <li><strong>Riemannian Manifolds</strong> — geodesics, metrics, and observer motions as smooth
+                manifold-valued paths.</li>
+              <li><strong>Variational Calculus</strong> — energy functionals and Euler–Lagrange formulations for
+                extracting objective, frame-invariant features.</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: High-Performance Computing & Rendering -->
+          <div class="card rounded-lg p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-sky-100 text-sky-600">
+                <i data-lucide="cpu" class="h-6 w-6"></i>
+              </span>
+              <h3 class="text-xl font-bold text-sky-300 card-title">High-Performance Computing &amp; Rendering</h3>
+            </div>
+            <p class="text-slate-400">
+              I translate continuous mathematical models into scalable, parallel implementations that run at
+              interactive rates on modern GPUs.
+            </p>
+            <ul class="list-disc pl-6 text-slate-400 mt-3 space-y-1">
+              <li><strong>CUDA / GPGPU</strong> — custom kernels for pathlines, flow maps, FTLE, and variational
+                reference-frame optimization.</li>
+              <li><strong>C++</strong> — high-performance compute cores with Python (PyBind) bindings for research
+                agility.</li>
+              <li><strong>OpenGL Rendering</strong> — real-time visualization pipelines for interactive exploration of
+                3D/4D unsteady flow.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-base text-gray-700 max-w-4xl mt-8">
+          <strong>Where they meet:</strong> objective vortex extraction and observer-relative flow visualization are, at
+          their core, variational optimization problems on manifolds. Solving them interactively is only possible by
+          mapping the geometry onto thousands of GPU threads — which is exactly where the mathematics and the
+          high-performance engineering reinforce each other in my work.
+        </p>
+      </section>
 
       <!-- Education Section -->
       <section id="education" class="py-8">
