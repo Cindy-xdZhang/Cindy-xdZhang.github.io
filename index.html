@@ -246,7 +246,7 @@
         <div class="hidden md:flex space-x-8">
           <a href="#research" class="nav-link">Research</a>
           <a href="#education" class="nav-link">Education</a>
-          <a href="#news" class="nav-link">News</a>
+          <!-- <a href="#news" class="nav-link">News</a> -->
           <a href="#publications" class="nav-link">Publications</a>
           <a href="#dataset" class="nav-link">Dataset</a>
           <a href="#projects" class="nav-link">Projects</a>
@@ -307,7 +307,7 @@
                   I completed my Ph.D. in Computer Science at KAUST in 2025. My research spans
                   <strong>flow visualization</strong>, <strong>high-performance computing</strong>, and
                   <strong>AI-driven visual computing</strong>, bringing together mathematics and GPU-accelerated
-                  engineering — see <a href="#research" class="text-sky-400 hover:underline">Research</a> for details.
+                  engineering.
                 </p>
               </div>
             </section>
@@ -343,63 +343,6 @@
         </div>
       </section>
 
-
-      <!-- Research Section -->
-      <section id="research" class="py-8">
-        <h2 class="text-4xl font-bold mb-6 section-title">Research</h2>
-        <p class="text-lg text-gray-800 max-w-4xl mb-8">
-          My research bridges the <strong>continuous language of mathematics</strong> and the
-          <strong>massively parallel world of the GPU</strong> — formulating flow features on smooth
-          <em>manifolds</em>, then realizing them as high-performance solvers and real-time renderers.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-          <!-- Pillar 1: Mathematical Foundations -->
-          <div class="card rounded-lg p-6 flex flex-col">
-            <div class="flex items-center gap-3 mb-3">
-              <span class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-sky-100 text-sky-600">
-                <i data-lucide="sigma" class="h-6 w-6"></i>
-              </span>
-              <h3 class="text-xl font-bold text-sky-300 card-title">Mathematical Foundations</h3>
-            </div>
-            <p class="text-slate-400">
-              I ground my methods in geometry and analysis, treating reference frames and flow structures as
-              objects on smooth manifolds rather than as fixed grids.
-            </p>
-            <ul class="list-disc pl-6 text-slate-400 mt-3 space-y-1">
-              <li><strong>Differential Geometry</strong> — vector fields, tensor calculus, Killing fields, and
-                curvature on curved domains.</li>
-              <li><strong>Riemannian Manifolds</strong> — geodesics, metrics, and observer motions as smooth
-                manifold-valued paths.</li>
-              <li><strong>Variational Calculus</strong> — energy functionals and Euler–Lagrange formulations for
-                extracting objective, frame-invariant features.</li>
-            </ul>
-          </div>
-
-          <!-- Pillar 2: High-Performance Computing & Rendering -->
-          <div class="card rounded-lg p-6 flex flex-col">
-            <div class="flex items-center gap-3 mb-3">
-              <span class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-sky-100 text-sky-600">
-                <i data-lucide="cpu" class="h-6 w-6"></i>
-              </span>
-              <h3 class="text-xl font-bold text-sky-300 card-title">High-Performance Computing &amp; Rendering</h3>
-            </div>
-            <p class="text-slate-400">
-              I translate continuous mathematical models into scalable, parallel implementations that run at
-              interactive rates on modern GPUs.
-            </p>
-            <ul class="list-disc pl-6 text-slate-400 mt-3 space-y-1">
-              <li><strong>CUDA / GPGPU</strong> — custom kernels for pathlines, flow maps, FTLE, and variational
-                reference-frame optimization.</li>
-              <li><strong>C++</strong> — high-performance compute cores with Python (PyBind) bindings for research
-                agility.</li>
-              <li><strong>OpenGL Rendering</strong> — real-time visualization pipelines for interactive exploration of
-                3D/4D unsteady flow.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <!-- Education Section -->
       <section id="education" class="py-8">
         <h2 class="text-4xl font-bold mb-6 section-title">Education</h2>
@@ -429,9 +372,59 @@
         </div>
       </section>
 
+      <!-- Research Section -->
+      <section id="research" class="py-8">
+        <h2 class="text-4xl font-bold mb-6 section-title">Research</h2>
+   
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+          <!-- Pillar 1: Mathematical Foundations -->
+          <div class="card rounded-lg p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-sky-100 text-sky-600">
+                <i data-lucide="sigma" class="h-6 w-6"></i>
+              </span>
+              <h3 class="text-xl font-bold text-sky-300 card-title">Mathematical Foundations</h3>
+            </div>
+            <p class="text-slate-400">
+              I ground my methods in geometry and analysis, treating reference frames and flow structures as
+              objects on smooth manifolds.
+            </p>
+            <ul class="list-disc pl-6 text-slate-400 mt-3 space-y-1">
+              <li><strong>Differential Geometry</strong> — vector fields, tensor calculus, Killing fields, and
+                reference frames transformations on curved domains.</li>
+              <li><strong>Riemannian Manifolds</strong> —  we have an ultimate goal is to fully describe observer motions in a space-time manifold as connection.</li>
+              <li><strong>Variational Calculus</strong> — energy functionals and Euler–Lagrange/Hamilton formulations for
+                extracting objective, frame-invariant features.</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: High-Performance Computing & Rendering -->
+          <div class="card rounded-lg p-6 flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center h-11 w-11 rounded-xl bg-sky-100 text-sky-600">
+                <i data-lucide="cpu" class="h-6 w-6"></i>
+              </span>
+              <h3 class="text-xl font-bold text-sky-300 card-title">High-Performance Computing &amp; Rendering</h3>
+            </div>
+            <p class="text-slate-400">
+              I translate continuous mathematical models into scalable, parallel implementations that run at
+              interactive rates on modern GPUs.
+            </p>
+            <ul class="list-disc pl-6 text-slate-400 mt-3 space-y-1">
+              <li><strong>C++/OpenGL Rendering</strong> — real-time high-performance renderer for interactive exploration of
+                2D/3D unsteady flow.</li>
+              <li><strong>CUDA / GPGPU</strong> — I have years of experience in writing custom CUDA kernels for linear algebra operations, sparse solver, parallel pathlines/flow maps/FTLE computation.</li>
+              <li><strong>Python/PyTorch</strong> —I have worked on machine learning and AI-driven scientific research.
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
 
       <!-- News Section -->
-      <section id="news" class="py-8">
+      <!-- <section id="news" class="py-8">
         <h2 class="text-4xl font-bold mb-6 section-title">News</h2>
         <div class="w-full space-y-4">
 
@@ -475,7 +468,7 @@
               objective vortices received an <strong>Honorable Mention for Best Paper at IEEE VIS 2021</strong>!</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Publications Section -->
       <section id="publications" class="py-14">
@@ -773,6 +766,26 @@
         </div>
       </section>
 
+    <!-- Honors Section -->
+    <section id="honors" class="py-8">
+      <h2 class="text-4xl font-bold mb-6 section-title">Honors and Awards</h2>
+      <div class="w-full space-y-4">
+        <div class="p-6 border border-slate-700 rounded-lg bg-slate-800/50">
+          <ul class="list-disc pl-6 text-slate-400 space-y-2">
+            <li>EuroVis Best PhD Award (the only two recipients of the 2026 EuroVis Annual Award for Best PhD Thesis)
+            </li>
+            <li>Honorable Mention Best Paper, IEEE VIS 2025</li>
+            <li>Best Paper Award, IEEE VIS 2023</li>
+            <li>Honorable Mention Best Paper, IEEE VIS 2021</li>
+            <li>KAUST CEMSE Dean's List Award (for academic achievements), 2024/2025</li>
+            <li>KAUST CEMSE Dean's List Award (for academic achievements), 2021/2022</li>
+            <li>National Scholarship of China (The Highest-Level Scholarship Funded by Chinese Government, Rate Top
+              0.1% Within China), 2018/2019</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
       <!-- Projects Section -->
       <section id="projects" class="py-14">
         <h2 class="text-4xl font-bold mb-8 section-title">Projects</h2>
@@ -854,26 +867,7 @@
         </div>
       </section>
 
-      <!-- Honors Section -->
-      <section id="honors" class="py-8">
-        <h2 class="text-4xl font-bold mb-6 section-title">Honors and Awards</h2>
-        <div class="w-full space-y-4">
-          <div class="p-6 border border-slate-700 rounded-lg bg-slate-800/50">
-            <ul class="list-disc pl-6 text-slate-400 space-y-2">
-              <li>EuroVis Best PhD Award (the only two recipients of the 2026 EuroVis Annual Award for Best PhD Thesis)
-              </li>
-              <li>Honorable Mention Best Paper, IEEE VIS 2025</li>
-              <li>Best Paper Award, IEEE VIS 2023</li>
-              <li>Honorable Mention Best Paper, IEEE VIS 2021</li>
-              <li>KAUST CEMSE Dean's List Award (for academic achievements), 2024/2025</li>
-              <li>KAUST CEMSE Dean's List Award (for academic achievements), 2021/2022</li>
-              <li>National Scholarship of China (The Highest-Level Scholarship Funded by Chinese Government, Rate Top
-                0.1% Within China), 2018/2019</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
+  
       <!-- Service Section -->
       <section id="service" class="py-8">
         <h2 class="text-4xl font-bold mb-6 section-title">Service</h2>
